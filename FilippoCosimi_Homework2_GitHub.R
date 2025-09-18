@@ -63,7 +63,7 @@ subset(dfmelt,subset=variable!="rating_1",select = c("variable","value"))
 ################## PART B ##################
 
 # 1
-rm(list=ls()); graphics.off() # clear work environment and reset graphic settings (it’s to ensure c	correct functioning of function x11())
+rm(list=ls()); graphics.off() # clear work environment and reset graphic settings (it’s to ensure correct functioning of function x11())
 setwd("C:/Users/Me/Homework/WD")
 
 # install.packages("reshape")
@@ -102,10 +102,10 @@ sd(dfpar$SES)
 set.seed(800)
 
 randomSample=sample(dfpar$PARTNO, 30) # to extract 30 random subjects from the dfpar dataset (the whole set is too big) 
-newdf=subset(dfpar, subset = PARTNO %in% randomSample, select = c("PARTNO", "Gender", "SES")) # new 	dataframe of 30 rows w/ demographic vars “PARTNO”, “Gender”, “SES”. I’ve taken them from the 	dataset used before for practicality (I’d rather recycle the data I already have, rather than write 	new data by hand)
+newdf=subset(dfpar, subset = PARTNO %in% randomSample, select = c("PARTNO", "Gender", "SES")) # new dataframe of 30 rows w/ demographic vars “PARTNO”, “Gender”, “SES”. I’ve taken them from the 	dataset used before for practicality (I’d rather recycle the data I already have, rather than write new data by hand)
 newdf$measurement_1=rnorm(30,0,1) # simulation of the measurement of a random varible w/ standardized normal distr. (size = 30)
 newdf$measurement_2=rnorm(30,0,1)
-newdf$measurement_3=rnorm(30,1,1) # let's hypothesize that on the 3rd measurement the distribution's 	mean changes due to the effect of an event in between measurement 2 and 3.
+newdf$measurement_3=rnorm(30,1,1) # let's hypothesize that on the 3rd measurement the distribution's mean changes due to the effect of an event in between measurement 2 and 3.
 
 newdf
 
@@ -208,5 +208,8 @@ newdf_copy=cast(newdf_melted, formula = PARTNO + Gender ~ variable, value = newd
 
 write.csv(newdf, file = 'newdf_HW2.csv', row.names = FALSE)
 write.csv(newdf_melted, file = 'newdf_melted_HW2.csv', row.names = FALSE)
+
+
+
 
 
