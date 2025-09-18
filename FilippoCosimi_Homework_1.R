@@ -18,7 +18,7 @@
     ################## PART B ##################
 
 rm(list=ls()); graphics.off()
-setwd("C:/Users/Vale/Documents/Documenti Importanti/Documenti Universit‡/Universit‡/Magistrale/Behavioural science - Radboud (Nijmegen)/LEZIONI/Advanced Statistics in R (SOW-BS086)/Period 1/Lesson Notes/WD")
+setwd("C:/Users/Vale/Documents/Documenti Importanti/Documenti Universit√†/Universit√†/Magistrale/Behavioural science - Radboud (Nijmegen)/LEZIONI/Advanced Statistics in R (SOW-BS086)/Period 1/Lesson Notes/WD")
 
 # can use both console or script as a calculator:
 
@@ -137,7 +137,7 @@ x11(); demo(graphics)
     #### 1.####
 
 rm(list=ls()); graphics.off()
-setwd("C:/Users/Vale/Documents/Documenti Importanti/Documenti Universit‡/Universit‡/Magistrale/Behavioural science - Radboud (Nijmegen)/LEZIONI/Advanced Statistics in R (SOW-BS086)/Period 1/Homework/HW1_08-09-25")
+setwd("C:/Users/Vale/Documents/Documenti Importanti/Documenti Universit√†/Universit√†/Magistrale/Behavioural science - Radboud (Nijmegen)/LEZIONI/Advanced Statistics in R (SOW-BS086)/Period 1/Homework/HW1_08-09-25")
 getwd()
 
 # I use x11() to open a new graphic window on Windows OS
