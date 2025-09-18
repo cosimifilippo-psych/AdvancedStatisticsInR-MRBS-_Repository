@@ -140,7 +140,7 @@ x11(); SESplot + # display the plot in a new window
   xlim(min(newdf$SES)-50,max(newdf$SES)+50) + # set range of axis x
   xlab("Socioeconomic Status (SES)") + ylab("Density") + # set axis labels
   APAgraphics +
-  theme(legend.position = c(0.85,0.75)) # set legend position # **
+  theme(legend.position = c(0.85,0.75)) # set legend position
 
 rm(dens, interpolMassSES) # clean up
 
@@ -208,6 +208,7 @@ newdf_copy=cast(newdf_melted, formula = PARTNO + Gender ~ variable, value = newd
 
 write.csv(newdf, file = 'newdf_HW2.csv', row.names = FALSE)
 write.csv(newdf_melted, file = 'newdf_melted_HW2.csv', row.names = FALSE)
+
 
 
 
