@@ -1,5 +1,5 @@
 
-
+#################################### FILIPPO COSIMI – s1170314
 #################################### HOMEWORK 1: ####################################
 # Introduction to R
 # due September 15, 2025 at 10:20 (upload to Pitch2Peer portal on Brightspace --> Week 1)
@@ -257,4 +257,5 @@ summary(LinearModel1)
 
 fitted(LinearModel1)
 lines(fitted(LinearModel1))
+
 
